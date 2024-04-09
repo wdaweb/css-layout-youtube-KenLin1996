@@ -1,0 +1,119 @@
+/* header 区域 */
+nav {
+  display: block;
+  width: 100%;
+  height: 56px;
+  padding: 0 20px;
+  background: palegoldenrod;
+}
+
+.start,
+.center,
+.end {
+  float: left;
+  height: 100%;
+}
+
+.start {
+  width: 25%;
+  background: #fff;
+}
+
+.burger,
+.icon {
+  height: 100%;
+  display: inline-block;
+  line-height: 56px;
+  vertical-align: middle;
+}
+
+.burger {
+  background: forestgreen;
+  padding: 16px;
+  width: 36px;
+}
+
+.burger img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+}
+
+.icon img {
+  height: 100%;
+}
+
+.center {
+  width: 50%;
+  text-align: center;
+  background: palegreen;
+}
+
+.searchContainer {
+  display: inline-block;
+  width: calc(70% - 10px);
+}
+
+.searchIcon {
+  border-radius: 0 40px 40px 0;
+}
+
+.center input {
+  width: calc(100% - 40px);
+  height: 26px;
+}
+
+.voice {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background: plum;
+}
+
+.voice img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.end {
+  width: 25%;
+  text-align: right;
+  background: #fff;
+}
+
+.menuDots {
+  background: pink;
+  width: 30px;
+}
+
+.loginWrapper {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.loginWrapper img {
+  width: 30px;
+}
+
+/* aside 区域 */
+aside {
+  float: left;
+  width: 20vw;
+  height: 100vh;
+  background: paleturquoise;
+}
+
+/* section 区域 */
+section {
+  float: right;
+  width: 80vw;
+  height: 100vh;
+  background: palevioletred;
+}

@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* header 區域 */
+nav {
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 56px;
+  padding: 0 20px;
+}
+
+hr {
+  margin: 12px 0px;
+}
+
+.menu1 {
+  position: fixed;
+  overflow-y: scroll;
+  height: 90vh;
+  top: 55px;
+}
+
+h3 {
+  margin: 0px 12px;
+  padding: 0px 12px;
+  font-size: 16px;
+}
+
+.start,
+.center,
+.end {
+  float: left;
+  height: 100%;
+}
+
+.start {
+  width: 25%;
+  background: #fff;
+}
+
+.burger,
+.icon {
+  height: 100%;
+  display: inline-block;
+
+  line-height: 56px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.burger {
+  position: relative;
+  padding: 20px;
+  width: 36px;
+  height: 20px;
+}
+
+.burger:hover {
+  background: rgba(0, 0, 0, 0.1);
+
+  border-radius: 50%;
+}
+
+.burger img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+}
+
+.icon img {
+  height: 100%;
+}
+
+.center {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.searchContainer {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  height: 40px;
+}
+
+.inputContainer {
+  position: relative;
+  border-radius: 40px 0 0 40px;
+  width: 558px;
+  float: left;
+  height: 100%;
+  margin-left: 20px;
+  border: 1px solid black;
+}
+
+.inputContainer input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+  font-size: 16px;
+  border: 0px;
+}
+
+.searchIcon {
+  background: #f8f8f8;
+  position: relative;
+  float: right;
+  border-radius: 0 40px 40px 0;
+  width: 60px;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.searchIcon:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.searchIcon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searchContainer,
+.voice {
+  display: inline-block;
+}
+
+.voice:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.center input {
+  width: calc(100% - 40px); /* 输入框宽度为 100% 减去按钮宽度和边距 */
+  height: 26px;
+}
+
+.voice {
+  position: relative;
+  float: right;
+  top: 8px;
+  right: 2px;
+  width: 40px; /* 宽度设置为图标宽度 */
+  height: 40px;
+  margin-left: 10px; /* 左边距 */
+  border-radius: 50%;
+  background: #f2f2f2;
+}
+
+.voice img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.end {
+  position: relative;
+  width: 25%;
+  text-align: right;
+  background: #fff;
+}
+
+.menuDots {
+  position: relative;
+  top: 50%;
+  right: -70%;
+  transform: translate(-50%, -50%);
+  float: left;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+.menuDots img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginWrapper {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 10px;
+  height: 36px;
+  float: right;
+  line-height: 32px;
+  position: absolute;
+  border-radius: 40px;
+  top: 50%;
+  right: -34px;
+  transform: translate(-50%, -50%);
+}
+
+.loginWrapper:hover {
+  background-color: #def1ff;
+  border-color: transparent;
+}
+
+.loginWrapper img {
+  width: 24px;
+}
+
+.end .loginWrapper img,
+.end .loginWrapper span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #065fd4;
+}
+
+/* aside 區域 */
+aside {
+  float: left;
+  width: 240px;
+  height: 100vh;
+}
+
+.home {
+  position: relative;
+
+  margin: 0px 12px;
+  padding: 12px;
+
+  border-radius: 10px;
+
+  height: 40px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.home img {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  width: 24px;
+}
+
+.home span {
+  color: #0f0f0f;
+  font-weight: 400;
+  position: absolute;
+  left: 58px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13.5px;
+}
+
+.home:hover {
+  background: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.s {
+  background: #fff;
+}
+
+.yourContents {
+  position: relative;
+
+  margin: 0px 12px;
+  padding: 12px;
+
+  border-radius: 10px;
+
+  height: 40px;
+}
+
+.yourContents img {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  width: 24px;
+}
+
+.yourContents span {
+  color: #0f0f0f;
+  font-weight: 400;
+  position: absolute;
+  left: 58px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13.5px;
+}
+
+.yourContents:hover {
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.ytrs {
+  position: relative;
+
+  margin: 0px 12px;
+  padding: 12px;
+
+  border-radius: 10px;
+
+  width: 100%;
+  height: 40px;
+}
+
+.ytrs img {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  width: 24px;
+}
+
+.ytrs span {
+  color: #0f0f0f;
+  font-weight: 400;
+  position: absolute;
+  left: 58px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13.5px;
+}
+
+.ytrs:hover {
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.asideFooter {
+  padding: 0px 24px 0;
+}
+
+.asideFooter div {
+  font-size: 13px;
+  color: #606060;
+}
+
+/* section 區域 */
+section {
+  position: absolute;
+  left: 16%;
+  top: 56px;
+  float: right;
+  /* width: 80vw; */
+  height: 100vh;
+  /* background: palevioletred; */
+}
+
+.sectionNav {
+  display: inline-block;
+  background: white;
+  width: 100vw;
+  position: fixed;
+  padding-bottom: 8px;
+  /* border: 1px solid black; */
+  z-index: 2;
+}
+
+.sectionNav li {
+  border-radius: 4px;
+  display: inline-block;
+  background: #f2f2f2;
+  color: black;
+  /* width: 100vw; */
+  /* position: fixed; */
+  /* border: 1px solid black; */
+  margin: 0px 12px 0px 0px;
+  padding: 4px 8px;
+  font-size: 15px;
+}
+.sectionNav li:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.sectionNav li:first-child {
+  border-radius: 4px;
+  display: inline-block;
+  background: black;
+  color: white;
+  /* width: 100vw; */
+  /* position: fixed; */
+  /* border: 1px solid black; */
+  /* margin: 0px 12px 12px 0px; */
+  padding: 4px 8px;
+}
+
+.sectionContent {
+  position: relative;
+  /* top: 100px; */
+  /* top: 14%; */
+  top: 6%;
+  padding: 24px 0 0;
+}
+
+.card {
+  display: inline-block;
+  /* border: 1px solid black; */
+  /* width: 20%; */
+  width: 19%;
+  height: 250px;
+  background: white;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.video1 img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.photo {
+  float: left;
+  padding: 0px 0 0 1px;
+}
+
+.photo img {
+  width: 32px;
+}
+
+.title {
+  float: right;
+  width: 194px;
+  padding: 0 4px 0 0;
+}
+
+.title .p1 {
+  font-size: 16px;
+}
+
+.title .p2 {
+  font-size: 10px;
+}
